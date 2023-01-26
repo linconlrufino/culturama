@@ -46,6 +46,20 @@
     max-width: 400px;
 }
 
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape__logo {
+    align-self: end;
+}
+
+.rodape__titulo {
+    margin: .5em 0;
+}
+
 @media screen and (min-width:720px) {
     .menu {
         column-gap: 75px;

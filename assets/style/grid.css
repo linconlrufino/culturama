@@ -30,6 +30,7 @@
 
 .eventos__item h3 {
     grid-area: nome;
+    align-self: center;
 }
 
 .eventos__item h4 {
@@ -38,6 +39,7 @@
 
 .eventos__item h5 {
     grid-area: localidade;
+    align-self: flex-end;
 }
 
 .eventos__item button {
@@ -77,5 +79,36 @@
     .banner img:nth-child(4) {
         grid-row: 1/ 3;
         grid-column: 3 / 4;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .categorias {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "evento destaque"
+            "evento imagem";
+        row-gap: 1rem;
+        column-gap: 1.5rem;
+        grid-template-rows: auto auto 3fr;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .categorias__titulo {
+        grid-area: titulo;
+    }
+
+    .categorias__lista {
+        grid-area: evento;
+    }
+
+    .categorias__destaque {
+        grid-area: destaque;
+    }
+
+    .categorias__imagem {
+        grid-area: imagem;
     }
 }
